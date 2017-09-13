@@ -19,6 +19,7 @@ module ArgyleHelper
     data = {
       'client-name' => name,
       'form-id' => id,
+      'select_account' => true,
       'key' => Argyle.configuration.key,
       'product' => product,
       'env' => env
