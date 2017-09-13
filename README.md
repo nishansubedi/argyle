@@ -36,7 +36,7 @@ end
 You may also _optionally_ configure the following:
 
 ```ruby
-config.env = "production"         # defaults to 'tartan' (Plaid's test environment)
+config.env = "production"         # defaults to 'sandbox' (Plaid's test environment)
 config.product = "connect"        # defaults to 'auth'
 ```
 
@@ -47,7 +47,7 @@ The `plaid_link` helper takes the following options:
 :name => required     # name of the customer used in Plaid Link flow
 :action => required   # form action that will be called on successful authentication
 :id => 'plaidForm'    # HTML id of the form
-:env => 'tartan'      # overrides Argyle.configuration.env
+:env => 'sandbox'      # overrides Argyle.configuration.env
 :product => 'auth'    # overrides Arygle.configuration.product
 :webhook => optional  # optionally set a webhook for a user
 :token => optional    # optionally use an existing token

@@ -5,13 +5,13 @@ module Argyle
     def initialize
       @plaid_src = "https://cdn.plaid.com/link/stable/link-initialize.js"
       @product = 'auth'
-      @env = 'tartan'
+      @env = 'sandbox'
       @long_tail = false
     end
 
     def environment_location
       return "https://api.plaid.com/" if @env == 'production'
-      "https://tartan.plaid.com/"
+      "https://sandbox.plaid.com/"
     end
   end
 end
